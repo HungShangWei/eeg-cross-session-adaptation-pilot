@@ -1,0 +1,32 @@
+# Convenience only. Publication uses an explicitly reviewed file whitelist; this file
+# cannot remove anything from Git history and does not authorize sharing any file.
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+*.pem
+*.key
+# EEG containers, model states, predictions and other large or sensitive arrays stay out.
+*.mat
+*.gdf
+*.pkl
+*.pickle
+*.npz
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.zip
+*.npy
+# The one whitelisted array: the fixed bootstrap resample-index matrix (indices 0-8 only).
+!protocol/participant_resamples.npy
+private_review/
+_inputs/
+_private_inputs/
+cache/
+tmp/
+node_modules/
+.github/workflows/

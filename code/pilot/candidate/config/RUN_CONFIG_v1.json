@@ -1,0 +1,264 @@
+{
+  "schema": "B2R-CANDIDATE-CONFIG/1",
+  "preparation_status": "READY_FOR_EXECUTION_APPROVAL",
+  "run_id": "DREC01_CORE_VALIDATION_PUBLIC_ALIAS_PILOT",
+  "run_root": "<PROJECT_ROOT>/validation_runs/drec01_core_validation_public_alias_pilot",
+  "prep_root": "<PROJECT_ROOT>/evidence_review/2026-10-26_B2_R_execution_preparation_v1",
+  "parent_prep_root": "<PROJECT_ROOT>/evidence_review/2026-10-26_B2_R_prepare_v1",
+  "retained_accounted_roots": [
+    "<PROJECT_ROOT>/evidence_review/2026-10-26_B2_R_preparation_reference_v1",
+    "<PROJECT_ROOT>/validation_runs/drec01_core_validation_retained_reference"
+  ],
+  "protocol": {
+    "path": "<PROJECT_ROOT>/inputs/mi_ops_fixed_tail_v1_1/EXPERIMENT_PROTOCOL_APPROVED.md",
+    "bytes": 154065,
+    "sha256": "6a134ba5265ba697408dbc268c70efa6adc24d4a6aa12391882b8ed2cac1666e"
+  },
+  "dataset": "BCI Competition IV 2b",
+  "participants": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "physical_sessions": [
+    3,
+    4
+  ],
+  "seed_bases": [
+    1103,
+    2207,
+    3301
+  ],
+  "effective_seed": "10000*participant+base",
+  "methods": [
+    "T",
+    "H"
+  ],
+  "budget": 10,
+  "F": 40,
+  "Q_ordinal_start": 40,
+  "label_candidates": [
+    0,
+    10
+  ],
+  "no_refill": true,
+  "fit_view": "valid feature/label pairs within first 10 candidates only",
+  "acceptance_probability": 0.75,
+  "defer_cost": 0.25,
+  "invalid_policy": "defer in full Q denominator",
+  "NI_margin": 0.02,
+  "source_split": {
+    "S-fit": "[0,n_s-80)",
+    "D0": "[n_s-80,n_s-60)",
+    "D1": "[n_s-60,n_s-40), first ten label candidates",
+    "D2": "[n_s-40,n_s-20)",
+    "S-cal": "[n_s-20,n_s), after choices frozen"
+  },
+  "source_plan": {
+    "1": {
+      "preprocessing": "REBUILD_REQUIRED",
+      "seeds": {
+        "1103": "REBUILD_REQUIRED",
+        "2207": "REBUILD_REQUIRED",
+        "3301": "REBUILD_REQUIRED"
+      }
+    },
+    "2": {
+      "preprocessing": "REBUILD_REQUIRED",
+      "seeds": {
+        "1103": "REBUILD_REQUIRED",
+        "2207": "REBUILD_REQUIRED",
+        "3301": "REBUILD_REQUIRED"
+      }
+    },
+    "3": {
+      "preprocessing": "REBUILD_REQUIRED",
+      "seeds": {
+        "1103": "REBUILD_REQUIRED",
+        "2207": "REBUILD_REQUIRED",
+        "3301": "REBUILD_REQUIRED"
+      }
+    },
+    "4": {
+      "preprocessing": "REBUILD_REQUIRED",
+      "seeds": {
+        "1103": "REBUILD_REQUIRED",
+        "2207": "REBUILD_REQUIRED",
+        "3301": "REBUILD_REQUIRED"
+      }
+    },
+    "5": {
+      "preprocessing": "REBUILD_REQUIRED",
+      "seeds": {
+        "1103": "REBUILD_REQUIRED",
+        "2207": "REBUILD_REQUIRED",
+        "3301": "REBUILD_REQUIRED"
+      }
+    },
+    "6": {
+      "preprocessing": "REBUILD_REQUIRED",
+      "seeds": {
+        "1103": "REBUILD_REQUIRED",
+        "2207": "REBUILD_REQUIRED",
+        "3301": "REBUILD_REQUIRED"
+      }
+    },
+    "7": {
+      "preprocessing": "REBUILD_REQUIRED",
+      "seeds": {
+        "1103": "REBUILD_REQUIRED",
+        "2207": "REBUILD_REQUIRED",
+        "3301": "REBUILD_REQUIRED"
+      }
+    },
+    "8": {
+      "preprocessing": "REBUILD_REQUIRED",
+      "seeds": {
+        "1103": "REBUILD_REQUIRED",
+        "2207": "REBUILD_REQUIRED",
+        "3301": "REBUILD_REQUIRED"
+      }
+    },
+    "9": {
+      "preprocessing": "REBUILD_REQUIRED",
+      "seeds": {
+        "1103": "REBUILD_REQUIRED",
+        "2207": "REBUILD_REQUIRED",
+        "3301": "REBUILD_REQUIRED"
+      }
+    }
+  },
+  "source_decision_sha256": "7d35fe49c645d5cc8ffe4e3e91aaf4438205401b2fa9129e6951b47c212bc09d",
+  "recipe": {
+    "training_epochs": 100,
+    "checkpoints": [
+      25,
+      50,
+      100
+    ],
+    "checkpoint_tie_tolerance": 1e-12,
+    "checkpoint_tie": "earliest",
+    "training_batch": 32,
+    "forward_batch": 16,
+    "optimizer": "AdamW",
+    "lr": 0.001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.0001,
+    "foreach": false,
+    "fused": false,
+    "T_grid_R": [
+      2,
+      4
+    ],
+    "T_grid_penalty": [
+      0.1,
+      1.0
+    ],
+    "H_grid_lam": [
+      0.01,
+      0.1,
+      1.0
+    ],
+    "T_target_grid_points": 401,
+    "source_T_grid_points": 402,
+    "H_maxiter": 100,
+    "H_maxfun": 1000,
+    "H_gtol": 1e-06,
+    "H_ftol": 1e-12,
+    "H_maxls": 20,
+    "encoder_dtype": "float32",
+    "heads_statistics_dtype": "float64",
+    "preprocessing": "unchanged frozen signal_recipe.py; completed buffer transform, not causal streaming"
+  },
+  "primary_rule": {
+    "unit_n": 9,
+    "seed_aggregation": "equal 3 seeds within participant, then equal 9 participants",
+    "J_upper_strict": 0.2,
+    "C_lower_strict": 0.5,
+    "point_guard": "J<=.2 and C>=.5 in >=7/9",
+    "active_guard": ">=2/3 active nonfallback seeds in >=6/9",
+    "H_useful_reference": "qualification reported; not a fourth HP1 support condition",
+    "bootstrap": "existing indices, percentile linear; downgrade only"
+  },
+  "bootstrap": {
+    "path": "<PROJECT_ROOT>/artifacts/mi_ops_fixed_tail_v1_1_resample_store/participant_resamples.npy",
+    "bytes": 720128,
+    "sha256": "877f8ecdebb5af1206404f9bea1a7a7281cad335ca113c71fc87edaceebe08b6"
+  },
+  "tolerances": {
+    "means_absolute": 1e-12,
+    "bounds_absolute": 1e-10,
+    "relative": 0,
+    "discrete": "exact",
+    "scope": "same NEW saved outputs versus independent arithmetic, never matching old DREC decimals"
+  },
+  "authorized_operations_required": [
+    "MAT_body_read",
+    "fixed_transform",
+    "source_rebuild_9",
+    "source_training_27",
+    "target_adaptation_54",
+    "Q_forward_54",
+    "post_seal_scoring",
+    "existing_bootstrap_only"
+  ],
+  "formal_resources": {
+    "time_cap_seconds": 3600,
+    "cleanup_seconds": 60,
+    "process_tree_total_RSS_cap_bytes": 4294967296,
+    "initial_available_bytes": 17179869184,
+    "step_available_after_reserve_bytes": 8589934592,
+    "allowed_pressure_codes": [
+      1
+    ],
+    "policy": "FORMAL_NORMAL_REQUIRED; PREP grant never accepted",
+    "cpu_threads": 1,
+    "gpu": false,
+    "ssd_floor_bytes": 16106127360,
+    "new_parent_resume_future_allocated_cap_bytes": 2147483648,
+    "controlled_total_cap_bytes": 12884901888
+  },
+  "controlled_roots": [
+    "<PROJECT_ROOT>/experiments/mi_ops_fixed_tail_v1_1",
+    "<PROJECT_ROOT>/artifacts_preflight/mi_ops_fixed_tail_v1_1",
+    "<PROJECT_ROOT>/inputs/mi_ops_fixed_tail_v1_1",
+    "<PROJECT_ROOT>/data/raw/bnci004_e1",
+    "<PROJECT_ROOT>/.venv_mi_ops_e1_v1_1",
+    "<PROJECT_ROOT>/artifacts/mi_ops_fixed_tail_v1_1",
+    "<PROJECT_ROOT>/artifacts/mi_ops_fixed_tail_v1_1_resample_store",
+    "<PROJECT_ROOT>/artifacts/mi_ops_fixed_tail_v1_1_resample_store_drec01",
+    "<PROJECT_ROOT>/evidence_review"
+  ],
+  "excluded_claims": [
+    "HP2 gain versus K/N/EA-U",
+    "no-label competitiveness",
+    "other budgets or costs",
+    "real-time latency or human setup benefit",
+    "multimodal or new human performance",
+    "fresh blind or OS isolation"
+  ],
+  "excluded_branches": [
+    "K/N/EA target comparisons",
+    "other budgets/costs",
+    "automatic retries",
+    "old job resume",
+    "new bootstrap generation"
+  ],
+  "formal_execution_authorized": false,
+  "public_projection": {
+    "kind": "derived configuration of the public release copy; not the executed configuration",
+    "changes": "the absolute project path is replaced by <PROJECT_ROOT> (as in the first public copy); the run identifier, the run directory name and local folder names are replaced by neutral public aliases or role names",
+    "omitted": "non-runtime setup metadata that no code in this repository reads is omitted from this release copy; the omitted fields and the full name mapping are retained privately by the author",
+    "executed_sha256": "listed in docs/PROVENANCE.json"
+  }
+}

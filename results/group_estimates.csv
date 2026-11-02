@@ -1,0 +1,6 @@
+method_or_contrast,metric,mean,ci95_t_lower,ci95_t_upper,interval,n_participants,criterion,criterion_met,mean_summary_field,source_pointer,summary_pointer
+T,J,0.1838348765432099,0.10688411998237957,0.26078563310404024,"ordinary two-sided 95% t, df=8",9,group: upper bound < 0.20,False,0.18383487654320987,/primary/T_usefulness/J,/summary/group/T_J
+T,C,0.576388888888889,0.32398574895703375,0.8287920288207442,"ordinary two-sided 95% t, df=8",9,group: lower bound > 0.50,False,0.5763888888888888,/primary/T_usefulness/C,/summary/group/T_C
+H,J,0.18452932098765432,0.10629624892673273,0.2627623930485759,"ordinary two-sided 95% t, df=8",9,group: upper bound < 0.20,False,0.18452932098765432,/primary/H_usefulness/J,/summary/group/H_J
+H,C,0.5995370370370371,0.3512736787514252,0.847800395322649,"ordinary two-sided 95% t, df=8",9,group: lower bound > 0.50,False,0.599537037037037,/primary/H_usefulness/C,/summary/group/H_C
+T-H,J,-0.000694444444444447,-0.00522386433735302,0.0038349754484641252,"ordinary two-sided 95% t, df=8",9,non-inferiority: upper bound < 0.02,True,-0.000694444444444447,/primary/delta,/summary/group/T_minus_H_J

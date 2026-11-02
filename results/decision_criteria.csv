@@ -1,0 +1,15 @@
+quantity,value,kind,requirement,requirement_met,source_pointer
+T individual rule (J<=0.20 and C>=0.50): participants meeting,5,count,>= 7 of 9,False,/primary/T_usefulness/participant_guard
+H individual rule (J<=0.20 and C>=0.50): participants meeting,5,count,>= 7 of 9,False,/primary/H_usefulness/participant_guard
+T active-fit guard: participants with >=2/3 active non-fallback seeds,9,count,>= 6 of 9,True,/primary/T_active_people
+H active-fit guard: participants with >=2/3 active non-fallback seeds,9,count,>= 6 of 9,True,/primary/H_active_people
+Non-inferiority of T to H (margin 0.02),ESTABLISHED,saved label,ESTABLISHED,True,/primary/NI
+T usefulness established,False,saved flag,true,False,/primary/T_usefulness/established
+"H qualifies as useful fitted reference (reported, not a fourth success condition)",False,saved flag,true,False,/primary/H_useful_fitted_reference
+Primary composite label,NI_T_USEFUL_NOT_ESTABLISHED__T0_H0_A1,saved label,,,/primary/t_model_base_label
+Robustness status (bootstrap may only downgrade),no_bootstrap_upgrade,saved label,,,/primary/robustness_status
+"Saved percentile bootstrap interval, T_J (fixed 10000x9 participant resample indices; robustness only)","[0.12249131944444445, 0.24567997685185183]",interval,,,/primary/bootstrap/T_J
+"Saved percentile bootstrap interval, T_C (fixed 10000x9 participant resample indices; robustness only)","[0.36774305555555553, 0.766358024691358]",interval,,,/primary/bootstrap/T_C
+"Saved percentile bootstrap interval, H_J (fixed 10000x9 participant resample indices; robustness only)","[0.12237654320987655, 0.24726273148148145]",interval,,,/primary/bootstrap/H_J
+"Saved percentile bootstrap interval, H_C (fixed 10000x9 participant resample indices; robustness only)","[0.3921257716049383, 0.7841087962962963]",interval,,,/primary/bootstrap/H_C
+"Saved percentile bootstrap interval, T_minus_H_J (fixed 10000x9 participant resample indices; robustness only)","[-0.0041666666666666675, 0.003086419753086413]",interval,,,/primary/bootstrap/delta

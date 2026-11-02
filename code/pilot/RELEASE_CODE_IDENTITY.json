@@ -1,0 +1,217 @@
+{
+  "schema": "release-code-identity/1",
+  "purpose": "SHA-256 identity of the files in the candidate folder of this copy, in the format read by identity_check() in candidate/launch.py; not the identity of the originally executed code, not an execution approval and not a signature",
+  "file_count": 42,
+  "files": [
+    {
+      "path": "candidate/account.py",
+      "bytes": 2570,
+      "sha256": "f3991c4bcf1a76ff82631bbad6b1557fdbf51ec051d1cacb8dc9a442a6051cb7"
+    },
+    {
+      "path": "candidate/audit_core.py",
+      "bytes": 13417,
+      "sha256": "715c09af9163567022b52781819642b843d1e22fba2d98cf466dc084b8504e41"
+    },
+    {
+      "path": "candidate/config/DATA_MANIFEST_v1.json",
+      "bytes": 9451,
+      "sha256": "8cf7112a2bb38255c0cc82caa2b5852fcb4089972ff6930aeb7a054014501538"
+    },
+    {
+      "path": "candidate/config/ENVIRONMENT_METADATA_v1.json",
+      "bytes": 1142,
+      "sha256": "42970ac30f9d42448783decc304a6f357e714274218172bb645b0d1aeb24c492"
+    },
+    {
+      "path": "candidate/config/RUN_CONFIG_v1.json",
+      "bytes": 7704,
+      "sha256": "3ed6a42a724ec0ac46047501b2f79db8d589d308f7484c60e2a0c712d9d5e9f8"
+    },
+    {
+      "path": "candidate/content_identity.py",
+      "bytes": 3228,
+      "sha256": "1b0508d7a19bc4618453a1e68a588144c828690f965b6f704d01ab646db981d3"
+    },
+    {
+      "path": "candidate/data_service.py",
+      "bytes": 14418,
+      "sha256": "9a67f44e3f379c8fd8dfc97372b3ac0947e115cf123c2e016fab96215cb0d4ff"
+    },
+    {
+      "path": "candidate/flow.py",
+      "bytes": 5138,
+      "sha256": "a5353b6c2aeab6aa0d6cb6f8cfd4995c81aee63ec951c0b8e617dc07c369ffaf"
+    },
+    {
+      "path": "candidate/frozen/accounting.py",
+      "bytes": 3248,
+      "sha256": "d1306b45924f656ae4fb56dd3e1fec95559354dffd7200d544e979f4ea7e03c4"
+    },
+    {
+      "path": "candidate/frozen/array_edges.py",
+      "bytes": 421,
+      "sha256": "6d3b117e593bcc2298795b81883ca79c19ee75e3df33d7514bef11d2a46d4f4d"
+    },
+    {
+      "path": "candidate/frozen/composition.py",
+      "bytes": 3053,
+      "sha256": "78850d610a8ee6ee9ed83c5334d8e4c973b0d6ad7bb30c4c7f8bdad4ca13f8ec"
+    },
+    {
+      "path": "candidate/frozen/contracts.py",
+      "bytes": 8177,
+      "sha256": "ea03227c1fdfc0d6e75f21e02dbd2c049c61ddf7ebce26610d1323ad691cd964"
+    },
+    {
+      "path": "candidate/frozen/ea_recipe.py",
+      "bytes": 4032,
+      "sha256": "e788d0ddc7c7447b7b9f4e70c4963460986210e0d26d431902520668705a1291"
+    },
+    {
+      "path": "candidate/frozen/inference_audit.py",
+      "bytes": 3287,
+      "sha256": "ce933a29d9e55beec7e1c0d6697a0b29bd293754ceea4d7a6cd878b9f793448a"
+    },
+    {
+      "path": "candidate/frozen/inference_contract.py",
+      "bytes": 3670,
+      "sha256": "3eecd3eb19b5b20df27cfbd8c450366f366e5893d73b4543aea10fd491450351"
+    },
+    {
+      "path": "candidate/frozen/neural_recipe.py",
+      "bytes": 6487,
+      "sha256": "298cbb95f5bc4694484a87cb36b6de12d59956cd00e825396fdbe58cb8d88b8b"
+    },
+    {
+      "path": "candidate/frozen/numeric_dependencies.py",
+      "bytes": 2536,
+      "sha256": "5f8d3ead13b0716ef3d3cc76ee2932b60c14e5e4698155710aec60c8bdd8e255"
+    },
+    {
+      "path": "candidate/frozen/operations.py",
+      "bytes": 2536,
+      "sha256": "4d86be46d4a1232922189de586af2c6468fa186fe20d23c037c84a12243ab936"
+    },
+    {
+      "path": "candidate/frozen/science_contract.py",
+      "bytes": 3047,
+      "sha256": "91399b28cc51686ac42512df6abe47e494b504f24d64b2b88ee3e31e6fd233bd"
+    },
+    {
+      "path": "candidate/frozen/signal_recipe.py",
+      "bytes": 3614,
+      "sha256": "f0de84b5e67225fda25c2648555e73b1f2e4477900cf72c8bea7c1f7135e6002"
+    },
+    {
+      "path": "candidate/frozen/solvers_recipe.py",
+      "bytes": 6054,
+      "sha256": "88261e9f3fbb1ac9bef36109bab79e5bf2012f82981b02382ebda7ff8a3ed298"
+    },
+    {
+      "path": "candidate/frozen/source_recipe_e3prep.py",
+      "bytes": 8978,
+      "sha256": "95cba7af495612e501d11189383a0ac156853726cf56df42205f5185e3448977"
+    },
+    {
+      "path": "candidate/frozen/source_selection.py",
+      "bytes": 2549,
+      "sha256": "2f890e8431329264dd23809ba3d3aa9c40220520af1b2b84ad98ec6f00124326"
+    },
+    {
+      "path": "candidate/frozen/statistics_recipe.py",
+      "bytes": 6604,
+      "sha256": "f1aeb0f66fb79f2d77732b24a4bc492cd78a1eaec127d5a7dccdc55181aa3585"
+    },
+    {
+      "path": "candidate/frozen/trusted_ingress.py",
+      "bytes": 4531,
+      "sha256": "216cf29e2d2053c4d51e2c75fc075d41d4e68cc5d3a23f7b50a322636d344d41"
+    },
+    {
+      "path": "candidate/independent_statistics.py",
+      "bytes": 4597,
+      "sha256": "1de38fd24fda7d8f20e24ef7243a464e30b3247d4c519ffc5950233b8c2e2017"
+    },
+    {
+      "path": "candidate/launch.py",
+      "bytes": 7091,
+      "sha256": "d546f3dcc62d84f8d7f10c52eac599a9f97a509aee174dc20f6b054ce755ff47"
+    },
+    {
+      "path": "candidate/model_adapter.py",
+      "bytes": 7685,
+      "sha256": "f356d0964500c0a08cec06a68b3f6c30a7c92f097f249756185e2324e00412eb"
+    },
+    {
+      "path": "candidate/native_helper.py",
+      "bytes": 5541,
+      "sha256": "a9b24cc2e243b72b1a08cefffaacac9ed29ab492164cc3e864901aed41c31f32"
+    },
+    {
+      "path": "candidate/resource_guard.py",
+      "bytes": 4774,
+      "sha256": "fb61f80d624608459e99392a3e6a7b42a87717f69e3f001b84f5c5f9d4d3b570"
+    },
+    {
+      "path": "candidate/runtime_modules/composition.py",
+      "bytes": 3133,
+      "sha256": "0c0bc3d51f956c296ee42dcbaf50e1122e7c3ed1caeca389572293c0b20bab8d"
+    },
+    {
+      "path": "candidate/runtime_modules/contracts.py",
+      "bytes": 8269,
+      "sha256": "ed359e88be67d8d9f650b6bee0bdfb9f1779aa6ceaeaff09c75408da69ffbc2a"
+    },
+    {
+      "path": "candidate/runtime_modules/numeric_dependencies.py",
+      "bytes": 2894,
+      "sha256": "b2b95eee13e60b9c1d4b0706ab3fb5d14189584e86ff7b72928197525d12bc36"
+    },
+    {
+      "path": "candidate/runtime_modules/source_recipe_e3prep.py",
+      "bytes": 6922,
+      "sha256": "c111e560d58a1fc6056ca0af290ad700f5d04112f54b9054a549203c3f49e5c4"
+    },
+    {
+      "path": "candidate/runtime_modules/statistics_recipe.py",
+      "bytes": 6502,
+      "sha256": "ce9b1a0586b232cc5bbc67ca54bf913bc305e639e4b090bdba8de93bc6d48f52"
+    },
+    {
+      "path": "candidate/runtime_modules/trusted_ingress.py",
+      "bytes": 5191,
+      "sha256": "4b67ba5e69f3d4c8b800297c30c922e7c4cc9e0b67d3851709a28eb00126be79"
+    },
+    {
+      "path": "candidate/scorer.py",
+      "bytes": 2966,
+      "sha256": "3cf410b9678248715b9550cab2a5ec2e175c45d25637dd82de2e6f2549164bcf"
+    },
+    {
+      "path": "candidate/supervise.py",
+      "bytes": 5111,
+      "sha256": "90c096653e33700df722c783f8961a8ea869006d8aedec3eb7153a1e11c0566b"
+    },
+    {
+      "path": "candidate/tests/engineering_startup_probe.py",
+      "bytes": 22323,
+      "sha256": "6e2dbffb4d0d19c7c94fbd3c506ac0680965963eaa211dea4b39a5572420fc7f"
+    },
+    {
+      "path": "candidate/tests/fixture_child.py",
+      "bytes": 834,
+      "sha256": "76bc8f83ec80d283bb40d7f8e3ca49ce949f057dc53f75dc15d35212558224ff"
+    },
+    {
+      "path": "candidate/tests/test_boundaries.py",
+      "bytes": 5300,
+      "sha256": "31bb366258bd2878f328a9a7311ecb6fac0ead8bb3a83e03b8d0b96a41ca0e62"
+    },
+    {
+      "path": "candidate/tests/test_integration.py",
+      "bytes": 15917,
+      "sha256": "f2832c2ff88d70c75d8cae73b57bd9efeb269cb2451346778294dab89e6fa357"
+    }
+  ]
+}

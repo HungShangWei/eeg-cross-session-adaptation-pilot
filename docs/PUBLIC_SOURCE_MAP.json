@@ -1,0 +1,820 @@
+{
+ "schema": "eeg-pilot-public-source-map/2",
+ "purpose": "Relates every file of this release copy to its originals: the corresponding file of the parent public snapshot and, where the file stands for an object used in the reported execution, that object's recorded hash. Original hashes are kept as recorded and are never replaced by current ones; current_sha256 describes this release copy. Paths are given in the neutral form used by this release copy; the earlier names and the full name correspondence are kept privately by the author.",
+ "parent_public_snapshot": {
+  "description": "the public copy as last updated on 2026-10-27 (Asia/Taipei), from which this release copy was prepared",
+  "git_tree": "03b6aa93b6531c4b927cd3bc2a20dae75e99ebf5"
+ },
+ "executed_code_identity": {
+  "objects": 45,
+  "manifest_sha256": "bdc2c4cd778b0c601ea7ff08b20c6272fd27187421cc2850bf32f62ac1353b4c",
+  "record": "docs/PROVENANCE.json",
+  "in_this_repository": "39 Python files and 3 configuration files, under code/pilot/candidate/",
+  "not_included": "3 planning or administrative records, listed with their executed hashes in docs/PROVENANCE.json; their files were not obtained for this release copy",
+  "executed_files": "the executed configuration files were not obtained for this release copy (only their recorded hashes are given); for the 25 Python files that differ from the executed ones, the executed file is identical to the parent public file (parent_public_sha256 equals executed_sha256)"
+ },
+ "not_listed": "this file itself (a file cannot record its own hash)",
+ "field_values": {
+  "current_sha256": "SHA-256 of the file in this release copy",
+  "parent_public_sha256": "SHA-256 of the corresponding file of the parent public snapshot; null for files that are new since then",
+  "path_changed": "true when the file's path differs from that of the parent public file; null for new files",
+  "executed_sha256": "SHA-256 recorded in docs/PROVENANCE.json for the object used in the reported execution: the executed file for code identity files, the saved scoring output for results/primary_results.json, and the pinned input for protocol/participant_resamples.npy; 'not_applicable' otherwise"
+ },
+ "change_types": {
+  "unchanged": "bytes identical to the parent public file",
+  "neutral_renames": "only names were replaced by neutral names (files, folders, modules, identifiers, run and folder labels in text, internal labels in docstrings or comments); no statement, value or control flow changed",
+  "neutral_renames_and_comment_corrections": "neutral renames, and corrected comments or docstrings (mostly wording from code preparation that read as if the code had not yet run); code statements unchanged",
+  "comment_corrections": "only comments or docstrings from code preparation that read as if the code had not yet run were corrected; code statements unchanged",
+  "derived_configuration": "configuration derived from the parent public file: the run identifier and local folder names replaced by neutral public aliases or role names, non-runtime setup metadata omitted, and a public_projection note added; every other value unchanged",
+  "public_projection": "JSON record projected for this release copy: identifier fields given in neutral form and a public_projection note added; every number (as written), flag, count and ordering unchanged",
+  "display_script_edited": "display script edited (see note); it still reads only saved values and recomputes no statistic",
+  "figure_redrawn": "figure redrawn on 2026-10-31 from the same pinned saved values and frozen margin, after four title and note strings were changed; renamed in this release copy without redrawing",
+  "reader_text_edited": "reader documentation edited (reading order, wording, names, links, release-copy descriptions); no saved value or decision changed",
+  "new_file": "not present in the parent public snapshot"
+ },
+ "evidence_scopes": {
+  "executed_code": "code of the reported execution (2026-10-27). Byte-identical files match the executed hash; the others were compared statically with the executed file (renames reversed). Not re-executed in this release copy",
+  "run_configuration": "configuration of the reported execution with the local project path replaced; the executed file was not obtained for this release copy, only its recorded hash",
+  "derived_configuration": "derived configuration of this release copy; not the executed configuration, and the executed approval and identity manifest do not apply to it",
+  "saved_result": "saved aggregate result of the reported execution, as a public projection; the original hash is recorded in the file's public_projection note and in docs/PROVENANCE.json",
+  "run_record": "provenance record of the reported execution, as a public projection; executed and first-public hashes are the original values",
+  "result_table": "deterministic projection of results/primary_results.json, checked with scripts/make_result_tables.py --check",
+  "display_script": "display script; reads saved values only and recomputes no statistic",
+  "figure": "illustration drawn from saved values; not an additional check",
+  "run_input": "bootstrap index matrix used by the run; its hash is pinned in the run configuration",
+  "environment_record": "record of the original run environment; installation from it was not tested",
+  "licence_text": "licence text as chosen by the copyright holder; bytes unchanged",
+  "reader_documentation": "reader documentation; it describes the evidence and is not evidence by itself",
+  "repository_file": "repository convenience file",
+  "release_tooling": "engineering tool or test added for this release copy; not part of the reported execution",
+  "release_identity_manifest": "SHA-256 identity of the files in candidate/ of this release copy, written by tools/code_identity.py; not the original execution identity and not an approval"
+ },
+ "counts_by_change_type": {
+  "unchanged": 24,
+  "neutral_renames": 19,
+  "reader_text_edited": 11,
+  "neutral_renames_and_comment_corrections": 6,
+  "new_file": 4,
+  "comment_corrections": 2,
+  "display_script_edited": 2,
+  "figure_redrawn": 2,
+  "public_projection": 2,
+  "derived_configuration": 1
+ },
+ "counts_by_relation_to_executed": {
+  "not part of the reported execution": 29,
+  "neutral renames only; otherwise identical to the executed file": 17,
+  "byte-identical to the executed file": 14,
+  "neutral renames and corrected comments; code statements otherwise identical to the executed file": 6,
+  "corrected comments only; code statements identical to the executed file": 2,
+  "path-projected copy of the executed configuration (local project path replaced by <PROJECT_ROOT>)": 2,
+  "byte-identical to the input matrix used by the run (not part of the code identity)": 1,
+  "derived configuration; not the executed configuration": 1,
+  "public projection of the saved scoring output (run identifier replaced by a public alias; projection note added; every other field identical)": 1
+ },
+ "files": [
+  {
+   "path": ".gitignore",
+   "current_sha256": "e03362c35a5573c539244f2ee302e276d396249f8ae3b0f0a231ae8f544a43b5",
+   "parent_public_sha256": "e03362c35a5573c539244f2ee302e276d396249f8ae3b0f0a231ae8f544a43b5",
+   "path_changed": false,
+   "change_type": "unchanged",
+   "executed_sha256": "not_applicable",
+   "relation_to_executed": "not part of the reported execution",
+   "evidence_scope": "repository_file"
+  },
+  {
+   "path": "README.md",
+   "current_sha256": "657cb328bf7830bb8fa2c1e7a8fa9e8e2080d96896a50be00213f9717e80254c",
+   "parent_public_sha256": "9c99e4d49667bde2eace423801433109d1453709bed1087872e6a6c5d6a726a9",
+   "path_changed": false,
+   "change_type": "reader_text_edited",
+   "executed_sha256": "not_applicable",
+   "relation_to_executed": "not part of the reported execution",
+   "evidence_scope": "reader_documentation"
+  },
+  {
+   "path": "THIRD_PARTY_NOTICES.md",
+   "current_sha256": "c8289953043ffaa7b7913de1b2aad1a271742b9729d1cd4e8363e4e75f6da95b",
+   "parent_public_sha256": "5305f504ebba64eb3c9950000f579531fad4bb63c8e202f733bb53da13e7fbc2",
+   "path_changed": false,
+   "change_type": "reader_text_edited",
+   "executed_sha256": "not_applicable",
+   "relation_to_executed": "not part of the reported execution",
+   "evidence_scope": "reader_documentation"
+  },
+  {
+   "path": "code/LICENSE",
+   "current_sha256": "dda6c1138e19e0b0c6ff5598b25b954225dae4e172c183b61591298aff5b3ca3",
+   "parent_public_sha256": "dda6c1138e19e0b0c6ff5598b25b954225dae4e172c183b61591298aff5b3ca3",
+   "path_changed": false,
+   "change_type": "unchanged",
+   "executed_sha256": "not_applicable",
+   "relation_to_executed": "not part of the reported execution",
+   "evidence_scope": "licence_text"
+  },
+  {
+   "path": "code/pilot/LICENSE",
+   "current_sha256": "dda6c1138e19e0b0c6ff5598b25b954225dae4e172c183b61591298aff5b3ca3",
+   "parent_public_sha256": "dda6c1138e19e0b0c6ff5598b25b954225dae4e172c183b61591298aff5b3ca3",
+   "path_changed": true,
+   "change_type": "unchanged",
+   "executed_sha256": "not_applicable",
+   "relation_to_executed": "not part of the reported execution",
+   "evidence_scope": "licence_text"
+  },
+  {
+   "path": "code/pilot/README.md",
+   "current_sha256": "298c82f7e84b84525b549099f7f6cc689485a6b8235218ea46f3e74e8bb097ff",
+   "parent_public_sha256": "39a6bed5d53c0adc0331e6140111d649d108fc959a68a0534c1447b8cf6142a5",
+   "path_changed": true,
+   "change_type": "reader_text_edited",
+   "executed_sha256": "not_applicable",
+   "relation_to_executed": "not part of the reported execution",
+   "evidence_scope": "reader_documentation"
+  },
+  {
+   "path": "code/pilot/RELEASE_CODE_IDENTITY.json",
+   "current_sha256": "22a60662e7d3f428dddfbd9394fe43d3593b9df554f82d5ef81880967d9f9f58",
+   "parent_public_sha256": null,
+   "path_changed": null,
+   "change_type": "new_file",
+   "executed_sha256": "not_applicable",
+   "relation_to_executed": "not part of the reported execution",
+   "evidence_scope": "release_identity_manifest",
+   "note": "lists candidate/ only and not itself; this source map records its SHA-256"
+  },
+  {
+   "path": "code/pilot/candidate/account.py",
+   "current_sha256": "f3991c4bcf1a76ff82631bbad6b1557fdbf51ec051d1cacb8dc9a442a6051cb7",
+   "parent_public_sha256": "f3991c4bcf1a76ff82631bbad6b1557fdbf51ec051d1cacb8dc9a442a6051cb7",
+   "path_changed": true,
+   "change_type": "unchanged",
+   "executed_sha256": "f3991c4bcf1a76ff82631bbad6b1557fdbf51ec051d1cacb8dc9a442a6051cb7",
+   "relation_to_executed": "byte-identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "code/pilot/candidate/audit_core.py",
+   "current_sha256": "715c09af9163567022b52781819642b843d1e22fba2d98cf466dc084b8504e41",
+   "parent_public_sha256": "715c09af9163567022b52781819642b843d1e22fba2d98cf466dc084b8504e41",
+   "path_changed": true,
+   "change_type": "unchanged",
+   "executed_sha256": "715c09af9163567022b52781819642b843d1e22fba2d98cf466dc084b8504e41",
+   "relation_to_executed": "byte-identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "code/pilot/candidate/config/DATA_MANIFEST_v1.json",
+   "current_sha256": "8cf7112a2bb38255c0cc82caa2b5852fcb4089972ff6930aeb7a054014501538",
+   "parent_public_sha256": "8cf7112a2bb38255c0cc82caa2b5852fcb4089972ff6930aeb7a054014501538",
+   "path_changed": true,
+   "change_type": "unchanged",
+   "executed_sha256": "d547ea29c8f64363aa68c0e43178e5c3609155fae43cbb224224bf85c12d80e3",
+   "relation_to_executed": "path-projected copy of the executed configuration (local project path replaced by <PROJECT_ROOT>)",
+   "evidence_scope": "run_configuration"
+  },
+  {
+   "path": "code/pilot/candidate/config/ENVIRONMENT_METADATA_v1.json",
+   "current_sha256": "42970ac30f9d42448783decc304a6f357e714274218172bb645b0d1aeb24c492",
+   "parent_public_sha256": "42970ac30f9d42448783decc304a6f357e714274218172bb645b0d1aeb24c492",
+   "path_changed": true,
+   "change_type": "unchanged",
+   "executed_sha256": "6a16b2bcf0571a16e2a6df925b974805c530b9a5376ce5d3bc0c358897436511",
+   "relation_to_executed": "path-projected copy of the executed configuration (local project path replaced by <PROJECT_ROOT>)",
+   "evidence_scope": "run_configuration"
+  },
+  {
+   "path": "code/pilot/candidate/config/RUN_CONFIG_v1.json",
+   "current_sha256": "3ed6a42a724ec0ac46047501b2f79db8d589d308f7484c60e2a0c712d9d5e9f8",
+   "parent_public_sha256": "e65f6088e193414274ffcff7fda46ececd6dc9177bce0d8fb5d96df6d017ead1",
+   "path_changed": true,
+   "change_type": "derived_configuration",
+   "executed_sha256": "388e2172e0ae8a803451dd7e50dee8af2b5d3a1aecac7154eb6317744c7d6bed",
+   "relation_to_executed": "derived configuration; not the executed configuration",
+   "evidence_scope": "derived_configuration",
+   "note": "see its public_projection note; executed hash as recorded in docs/PROVENANCE.json"
+  },
+  {
+   "path": "code/pilot/candidate/content_identity.py",
+   "current_sha256": "1b0508d7a19bc4618453a1e68a588144c828690f965b6f704d01ab646db981d3",
+   "parent_public_sha256": "1b0508d7a19bc4618453a1e68a588144c828690f965b6f704d01ab646db981d3",
+   "path_changed": true,
+   "change_type": "unchanged",
+   "executed_sha256": "1b0508d7a19bc4618453a1e68a588144c828690f965b6f704d01ab646db981d3",
+   "relation_to_executed": "byte-identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "code/pilot/candidate/data_service.py",
+   "current_sha256": "9a67f44e3f379c8fd8dfc97372b3ac0947e115cf123c2e016fab96215cb0d4ff",
+   "parent_public_sha256": "8b154731b025c5a8689d5e736303d37e77a87a1dc804164b7b4d9c82d6b607c1",
+   "path_changed": true,
+   "change_type": "neutral_renames_and_comment_corrections",
+   "executed_sha256": "8b154731b025c5a8689d5e736303d37e77a87a1dc804164b7b4d9c82d6b607c1",
+   "relation_to_executed": "neutral renames and corrected comments; code statements otherwise identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "code/pilot/candidate/flow.py",
+   "current_sha256": "a5353b6c2aeab6aa0d6cb6f8cfd4995c81aee63ec951c0b8e617dc07c369ffaf",
+   "parent_public_sha256": "a5353b6c2aeab6aa0d6cb6f8cfd4995c81aee63ec951c0b8e617dc07c369ffaf",
+   "path_changed": true,
+   "change_type": "unchanged",
+   "executed_sha256": "a5353b6c2aeab6aa0d6cb6f8cfd4995c81aee63ec951c0b8e617dc07c369ffaf",
+   "relation_to_executed": "byte-identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "code/pilot/candidate/frozen/accounting.py",
+   "current_sha256": "d1306b45924f656ae4fb56dd3e1fec95559354dffd7200d544e979f4ea7e03c4",
+   "parent_public_sha256": "fbc73006d28bc70a73bc4b209973df4570cdb3bdf5dd61ff7436ab8c5278a11a",
+   "path_changed": true,
+   "change_type": "neutral_renames_and_comment_corrections",
+   "executed_sha256": "fbc73006d28bc70a73bc4b209973df4570cdb3bdf5dd61ff7436ab8c5278a11a",
+   "relation_to_executed": "neutral renames and corrected comments; code statements otherwise identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "code/pilot/candidate/frozen/array_edges.py",
+   "current_sha256": "6d3b117e593bcc2298795b81883ca79c19ee75e3df33d7514bef11d2a46d4f4d",
+   "parent_public_sha256": "dea75441dc34bd01755eab59f6aaf952070e3c122007b0324673b73723dbc06d",
+   "path_changed": true,
+   "change_type": "neutral_renames",
+   "executed_sha256": "dea75441dc34bd01755eab59f6aaf952070e3c122007b0324673b73723dbc06d",
+   "relation_to_executed": "neutral renames only; otherwise identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "code/pilot/candidate/frozen/composition.py",
+   "current_sha256": "78850d610a8ee6ee9ed83c5334d8e4c973b0d6ad7bb30c4c7f8bdad4ca13f8ec",
+   "parent_public_sha256": "caed98b1c03159d827313b6a8a6edde5106d719880ac590d8c1b41205806b0ec",
+   "path_changed": true,
+   "change_type": "neutral_renames",
+   "executed_sha256": "caed98b1c03159d827313b6a8a6edde5106d719880ac590d8c1b41205806b0ec",
+   "relation_to_executed": "neutral renames only; otherwise identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "code/pilot/candidate/frozen/contracts.py",
+   "current_sha256": "ea03227c1fdfc0d6e75f21e02dbd2c049c61ddf7ebce26610d1323ad691cd964",
+   "parent_public_sha256": "2965cd4beaeedc081e18021f372fa4fdb49500f290efd0655199a8696b350361",
+   "path_changed": true,
+   "change_type": "neutral_renames",
+   "executed_sha256": "2965cd4beaeedc081e18021f372fa4fdb49500f290efd0655199a8696b350361",
+   "relation_to_executed": "neutral renames only; otherwise identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "code/pilot/candidate/frozen/ea_recipe.py",
+   "current_sha256": "e788d0ddc7c7447b7b9f4e70c4963460986210e0d26d431902520668705a1291",
+   "parent_public_sha256": "45e2a3b076694edb6118511c7b4e1535c6f1ecf7cb80abe9a66ece88f8468392",
+   "path_changed": true,
+   "change_type": "neutral_renames",
+   "executed_sha256": "45e2a3b076694edb6118511c7b4e1535c6f1ecf7cb80abe9a66ece88f8468392",
+   "relation_to_executed": "neutral renames only; otherwise identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "code/pilot/candidate/frozen/inference_audit.py",
+   "current_sha256": "ce933a29d9e55beec7e1c0d6697a0b29bd293754ceea4d7a6cd878b9f793448a",
+   "parent_public_sha256": "c8e75d0aeacf8efb1e9111cb1c6012d0862433143acc332a0ed247a8d082b1fd",
+   "path_changed": true,
+   "change_type": "neutral_renames",
+   "executed_sha256": "c8e75d0aeacf8efb1e9111cb1c6012d0862433143acc332a0ed247a8d082b1fd",
+   "relation_to_executed": "neutral renames only; otherwise identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "code/pilot/candidate/frozen/inference_contract.py",
+   "current_sha256": "3eecd3eb19b5b20df27cfbd8c450366f366e5893d73b4543aea10fd491450351",
+   "parent_public_sha256": "3eecd3eb19b5b20df27cfbd8c450366f366e5893d73b4543aea10fd491450351",
+   "path_changed": true,
+   "change_type": "unchanged",
+   "executed_sha256": "3eecd3eb19b5b20df27cfbd8c450366f366e5893d73b4543aea10fd491450351",
+   "relation_to_executed": "byte-identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "code/pilot/candidate/frozen/neural_recipe.py",
+   "current_sha256": "298cbb95f5bc4694484a87cb36b6de12d59956cd00e825396fdbe58cb8d88b8b",
+   "parent_public_sha256": "0791d1784101305e846925cbe93841b1fd2291f7ba550f646338c49ada324311",
+   "path_changed": true,
+   "change_type": "neutral_renames",
+   "executed_sha256": "0791d1784101305e846925cbe93841b1fd2291f7ba550f646338c49ada324311",
+   "relation_to_executed": "neutral renames only; otherwise identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "code/pilot/candidate/frozen/numeric_dependencies.py",
+   "current_sha256": "5f8d3ead13b0716ef3d3cc76ee2932b60c14e5e4698155710aec60c8bdd8e255",
+   "parent_public_sha256": "212e9ba3905425c4ff5bbe0d9b5d3b2eed9cd2949b0094c1ad1b01db84f5843b",
+   "path_changed": true,
+   "change_type": "neutral_renames",
+   "executed_sha256": "212e9ba3905425c4ff5bbe0d9b5d3b2eed9cd2949b0094c1ad1b01db84f5843b",
+   "relation_to_executed": "neutral renames only; otherwise identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "code/pilot/candidate/frozen/operations.py",
+   "current_sha256": "4d86be46d4a1232922189de586af2c6468fa186fe20d23c037c84a12243ab936",
+   "parent_public_sha256": "f38f03045c259b78d600f64c873b41964da98d2522f8b08e4b7acf868bef702c",
+   "path_changed": true,
+   "change_type": "neutral_renames",
+   "executed_sha256": "f38f03045c259b78d600f64c873b41964da98d2522f8b08e4b7acf868bef702c",
+   "relation_to_executed": "neutral renames only; otherwise identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "code/pilot/candidate/frozen/science_contract.py",
+   "current_sha256": "91399b28cc51686ac42512df6abe47e494b504f24d64b2b88ee3e31e6fd233bd",
+   "parent_public_sha256": "5b453d2223ee49a3a988dceca08616046a53d203fa7497402bb7664922fe0098",
+   "path_changed": true,
+   "change_type": "neutral_renames_and_comment_corrections",
+   "executed_sha256": "5b453d2223ee49a3a988dceca08616046a53d203fa7497402bb7664922fe0098",
+   "relation_to_executed": "neutral renames and corrected comments; code statements otherwise identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "code/pilot/candidate/frozen/signal_recipe.py",
+   "current_sha256": "f0de84b5e67225fda25c2648555e73b1f2e4477900cf72c8bea7c1f7135e6002",
+   "parent_public_sha256": "f0de84b5e67225fda25c2648555e73b1f2e4477900cf72c8bea7c1f7135e6002",
+   "path_changed": true,
+   "change_type": "unchanged",
+   "executed_sha256": "f0de84b5e67225fda25c2648555e73b1f2e4477900cf72c8bea7c1f7135e6002",
+   "relation_to_executed": "byte-identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "code/pilot/candidate/frozen/solvers_recipe.py",
+   "current_sha256": "88261e9f3fbb1ac9bef36109bab79e5bf2012f82981b02382ebda7ff8a3ed298",
+   "parent_public_sha256": "dc2c9e6f152eb6cb5f5479d67d699acf83dc7d3c287511f26ebf8df28031e376",
+   "path_changed": true,
+   "change_type": "neutral_renames",
+   "executed_sha256": "dc2c9e6f152eb6cb5f5479d67d699acf83dc7d3c287511f26ebf8df28031e376",
+   "relation_to_executed": "neutral renames only; otherwise identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "code/pilot/candidate/frozen/source_recipe_e3prep.py",
+   "current_sha256": "95cba7af495612e501d11189383a0ac156853726cf56df42205f5185e3448977",
+   "parent_public_sha256": "b686dd493fb7942523cd7bf270ee5c064122a3f823b6343035f259eb1bdf00e8",
+   "path_changed": true,
+   "change_type": "neutral_renames",
+   "executed_sha256": "b686dd493fb7942523cd7bf270ee5c064122a3f823b6343035f259eb1bdf00e8",
+   "relation_to_executed": "neutral renames only; otherwise identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "code/pilot/candidate/frozen/source_selection.py",
+   "current_sha256": "2f890e8431329264dd23809ba3d3aa9c40220520af1b2b84ad98ec6f00124326",
+   "parent_public_sha256": "2f890e8431329264dd23809ba3d3aa9c40220520af1b2b84ad98ec6f00124326",
+   "path_changed": true,
+   "change_type": "unchanged",
+   "executed_sha256": "2f890e8431329264dd23809ba3d3aa9c40220520af1b2b84ad98ec6f00124326",
+   "relation_to_executed": "byte-identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "code/pilot/candidate/frozen/statistics_recipe.py",
+   "current_sha256": "f1aeb0f66fb79f2d77732b24a4bc492cd78a1eaec127d5a7dccdc55181aa3585",
+   "parent_public_sha256": "f1aeb0f66fb79f2d77732b24a4bc492cd78a1eaec127d5a7dccdc55181aa3585",
+   "path_changed": true,
+   "change_type": "unchanged",
+   "executed_sha256": "f1aeb0f66fb79f2d77732b24a4bc492cd78a1eaec127d5a7dccdc55181aa3585",
+   "relation_to_executed": "byte-identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "code/pilot/candidate/frozen/trusted_ingress.py",
+   "current_sha256": "216cf29e2d2053c4d51e2c75fc075d41d4e68cc5d3a23f7b50a322636d344d41",
+   "parent_public_sha256": "9c156ac435a20d090db873a4348141aa447cbcbaf0906174b3ca06deae433f1e",
+   "path_changed": true,
+   "change_type": "neutral_renames",
+   "executed_sha256": "9c156ac435a20d090db873a4348141aa447cbcbaf0906174b3ca06deae433f1e",
+   "relation_to_executed": "neutral renames only; otherwise identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "code/pilot/candidate/independent_statistics.py",
+   "current_sha256": "1de38fd24fda7d8f20e24ef7243a464e30b3247d4c519ffc5950233b8c2e2017",
+   "parent_public_sha256": "1de38fd24fda7d8f20e24ef7243a464e30b3247d4c519ffc5950233b8c2e2017",
+   "path_changed": true,
+   "change_type": "unchanged",
+   "executed_sha256": "1de38fd24fda7d8f20e24ef7243a464e30b3247d4c519ffc5950233b8c2e2017",
+   "relation_to_executed": "byte-identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "code/pilot/candidate/launch.py",
+   "current_sha256": "d546f3dcc62d84f8d7f10c52eac599a9f97a509aee174dc20f6b054ce755ff47",
+   "parent_public_sha256": "d546f3dcc62d84f8d7f10c52eac599a9f97a509aee174dc20f6b054ce755ff47",
+   "path_changed": true,
+   "change_type": "unchanged",
+   "executed_sha256": "d546f3dcc62d84f8d7f10c52eac599a9f97a509aee174dc20f6b054ce755ff47",
+   "relation_to_executed": "byte-identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "code/pilot/candidate/model_adapter.py",
+   "current_sha256": "f356d0964500c0a08cec06a68b3f6c30a7c92f097f249756185e2324e00412eb",
+   "parent_public_sha256": "890bc85093913c70d07dc6321867a29a4b9b611996534923c76f0b8eada59c11",
+   "path_changed": true,
+   "change_type": "neutral_renames",
+   "executed_sha256": "890bc85093913c70d07dc6321867a29a4b9b611996534923c76f0b8eada59c11",
+   "relation_to_executed": "neutral renames only; otherwise identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "code/pilot/candidate/native_helper.py",
+   "current_sha256": "a9b24cc2e243b72b1a08cefffaacac9ed29ab492164cc3e864901aed41c31f32",
+   "parent_public_sha256": "a9b24cc2e243b72b1a08cefffaacac9ed29ab492164cc3e864901aed41c31f32",
+   "path_changed": true,
+   "change_type": "unchanged",
+   "executed_sha256": "a9b24cc2e243b72b1a08cefffaacac9ed29ab492164cc3e864901aed41c31f32",
+   "relation_to_executed": "byte-identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "code/pilot/candidate/resource_guard.py",
+   "current_sha256": "fb61f80d624608459e99392a3e6a7b42a87717f69e3f001b84f5c5f9d4d3b570",
+   "parent_public_sha256": "f9885fb0b3ebd84f39048fe399c9dbadd54bf777f6a2b3bfd195e518d1cd879a",
+   "path_changed": true,
+   "change_type": "neutral_renames_and_comment_corrections",
+   "executed_sha256": "f9885fb0b3ebd84f39048fe399c9dbadd54bf777f6a2b3bfd195e518d1cd879a",
+   "relation_to_executed": "neutral renames and corrected comments; code statements otherwise identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "code/pilot/candidate/runtime_modules/composition.py",
+   "current_sha256": "0c0bc3d51f956c296ee42dcbaf50e1122e7c3ed1caeca389572293c0b20bab8d",
+   "parent_public_sha256": "80ca4a23d017294704532ec2dde9920e3f193d8547d2b81750e2fffa252652e6",
+   "path_changed": true,
+   "change_type": "neutral_renames",
+   "executed_sha256": "80ca4a23d017294704532ec2dde9920e3f193d8547d2b81750e2fffa252652e6",
+   "relation_to_executed": "neutral renames only; otherwise identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "code/pilot/candidate/runtime_modules/contracts.py",
+   "current_sha256": "ed359e88be67d8d9f650b6bee0bdfb9f1779aa6ceaeaff09c75408da69ffbc2a",
+   "parent_public_sha256": "f57f23ceeddc06352e0d7c9cc7df1b4d41a42992a6a847c7286e01f9f685b0b6",
+   "path_changed": true,
+   "change_type": "neutral_renames_and_comment_corrections",
+   "executed_sha256": "f57f23ceeddc06352e0d7c9cc7df1b4d41a42992a6a847c7286e01f9f685b0b6",
+   "relation_to_executed": "neutral renames and corrected comments; code statements otherwise identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "code/pilot/candidate/runtime_modules/numeric_dependencies.py",
+   "current_sha256": "b2b95eee13e60b9c1d4b0706ab3fb5d14189584e86ff7b72928197525d12bc36",
+   "parent_public_sha256": "81793ca187287fcbb09654a639fe686c63510cf7f754864e76b8f54389a9eee9",
+   "path_changed": true,
+   "change_type": "neutral_renames",
+   "executed_sha256": "81793ca187287fcbb09654a639fe686c63510cf7f754864e76b8f54389a9eee9",
+   "relation_to_executed": "neutral renames only; otherwise identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "code/pilot/candidate/runtime_modules/source_recipe_e3prep.py",
+   "current_sha256": "c111e560d58a1fc6056ca0af290ad700f5d04112f54b9054a549203c3f49e5c4",
+   "parent_public_sha256": "b1900da18e98d900e9dac71e29a717daf79b955cac7e82631d2fcb9e930508d8",
+   "path_changed": true,
+   "change_type": "neutral_renames_and_comment_corrections",
+   "executed_sha256": "b1900da18e98d900e9dac71e29a717daf79b955cac7e82631d2fcb9e930508d8",
+   "relation_to_executed": "neutral renames and corrected comments; code statements otherwise identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "code/pilot/candidate/runtime_modules/statistics_recipe.py",
+   "current_sha256": "ce9b1a0586b232cc5bbc67ca54bf913bc305e639e4b090bdba8de93bc6d48f52",
+   "parent_public_sha256": "ce9b1a0586b232cc5bbc67ca54bf913bc305e639e4b090bdba8de93bc6d48f52",
+   "path_changed": true,
+   "change_type": "unchanged",
+   "executed_sha256": "ce9b1a0586b232cc5bbc67ca54bf913bc305e639e4b090bdba8de93bc6d48f52",
+   "relation_to_executed": "byte-identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "code/pilot/candidate/runtime_modules/trusted_ingress.py",
+   "current_sha256": "4b67ba5e69f3d4c8b800297c30c922e7c4cc9e0b67d3851709a28eb00126be79",
+   "parent_public_sha256": "48773150f2314f6a0bcabab8a23fd0f18785f3fcc13da54ec7acf663d2090f56",
+   "path_changed": true,
+   "change_type": "neutral_renames",
+   "executed_sha256": "48773150f2314f6a0bcabab8a23fd0f18785f3fcc13da54ec7acf663d2090f56",
+   "relation_to_executed": "neutral renames only; otherwise identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "code/pilot/candidate/scorer.py",
+   "current_sha256": "3cf410b9678248715b9550cab2a5ec2e175c45d25637dd82de2e6f2549164bcf",
+   "parent_public_sha256": "4593c83529c3fb02a309a8f7c88b1435f40b57a15687efc538324df014642654",
+   "path_changed": true,
+   "change_type": "comment_corrections",
+   "executed_sha256": "4593c83529c3fb02a309a8f7c88b1435f40b57a15687efc538324df014642654",
+   "relation_to_executed": "corrected comments only; code statements identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "code/pilot/candidate/supervise.py",
+   "current_sha256": "90c096653e33700df722c783f8961a8ea869006d8aedec3eb7153a1e11c0566b",
+   "parent_public_sha256": "e207b1e8e2953d39b30f7e5097dbb4a9aa47f0a423a6ebd3a738ad2eca6813c1",
+   "path_changed": true,
+   "change_type": "comment_corrections",
+   "executed_sha256": "e207b1e8e2953d39b30f7e5097dbb4a9aa47f0a423a6ebd3a738ad2eca6813c1",
+   "relation_to_executed": "corrected comments only; code statements identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "code/pilot/candidate/tests/engineering_startup_probe.py",
+   "current_sha256": "6e2dbffb4d0d19c7c94fbd3c506ac0680965963eaa211dea4b39a5572420fc7f",
+   "parent_public_sha256": "9cc867884824895d065ccf932b1f03cfbfeaf9c56c6b07f223140f1295674f30",
+   "path_changed": true,
+   "change_type": "neutral_renames",
+   "executed_sha256": "9cc867884824895d065ccf932b1f03cfbfeaf9c56c6b07f223140f1295674f30",
+   "relation_to_executed": "neutral renames only; otherwise identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "code/pilot/candidate/tests/fixture_child.py",
+   "current_sha256": "76bc8f83ec80d283bb40d7f8e3ca49ce949f057dc53f75dc15d35212558224ff",
+   "parent_public_sha256": "76bc8f83ec80d283bb40d7f8e3ca49ce949f057dc53f75dc15d35212558224ff",
+   "path_changed": true,
+   "change_type": "unchanged",
+   "executed_sha256": "76bc8f83ec80d283bb40d7f8e3ca49ce949f057dc53f75dc15d35212558224ff",
+   "relation_to_executed": "byte-identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "code/pilot/candidate/tests/test_boundaries.py",
+   "current_sha256": "31bb366258bd2878f328a9a7311ecb6fac0ead8bb3a83e03b8d0b96a41ca0e62",
+   "parent_public_sha256": "31bb366258bd2878f328a9a7311ecb6fac0ead8bb3a83e03b8d0b96a41ca0e62",
+   "path_changed": true,
+   "change_type": "unchanged",
+   "executed_sha256": "31bb366258bd2878f328a9a7311ecb6fac0ead8bb3a83e03b8d0b96a41ca0e62",
+   "relation_to_executed": "byte-identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "code/pilot/candidate/tests/test_integration.py",
+   "current_sha256": "f2832c2ff88d70c75d8cae73b57bd9efeb269cb2451346778294dab89e6fa357",
+   "parent_public_sha256": "37774878592ffab4990cd95f5f09282d71d0de42b22a671a5d55532c74ecf481",
+   "path_changed": true,
+   "change_type": "neutral_renames",
+   "executed_sha256": "37774878592ffab4990cd95f5f09282d71d0de42b22a671a5d55532c74ecf481",
+   "relation_to_executed": "neutral renames only; otherwise identical to the executed file",
+   "evidence_scope": "executed_code"
+  },
+  {
+   "path": "data/README.md",
+   "current_sha256": "1632146e19b9a8875e96bd374b431a72eee77f8a1e0e30efa5218022a2acf448",
+   "parent_public_sha256": "cfaa281c597e8fa616608544bb5c5a14f69a8cf0160dbff96839f9cf94656c8b",
+   "path_changed": false,
+   "change_type": "reader_text_edited",
+   "executed_sha256": "not_applicable",
+   "relation_to_executed": "not part of the reported execution",
+   "evidence_scope": "reader_documentation"
+  },
+  {
+   "path": "docs/CODE_AND_EVIDENCE_MAP.md",
+   "current_sha256": "329e031b31d96eb307d7b1d054f895c3f23e4df1cd02ee21495160a8b80ebdcb",
+   "parent_public_sha256": "5ed5eed327d26a9b1445393ac557a7725a72fb059c57d891a7680fe51b2ed2d2",
+   "path_changed": false,
+   "change_type": "reader_text_edited",
+   "executed_sha256": "not_applicable",
+   "relation_to_executed": "not part of the reported execution",
+   "evidence_scope": "reader_documentation"
+  },
+  {
+   "path": "docs/METHODS_AND_LIMITATIONS.md",
+   "current_sha256": "d742a7ab851d4f32fe9e480de92ec10efb2d00bb590b421e2f8768c85f73757c",
+   "parent_public_sha256": "f035bb376efb2d97d638ec675fc314236956650c0ae5876cf6ac62a99e3e8cab",
+   "path_changed": false,
+   "change_type": "reader_text_edited",
+   "executed_sha256": "not_applicable",
+   "relation_to_executed": "not part of the reported execution",
+   "evidence_scope": "reader_documentation"
+  },
+  {
+   "path": "docs/METHOD_WALKTHROUGH.md",
+   "current_sha256": "05e96d9b4dce50b0472c731549c7921cd0f7d5a8348e49e376dc7f96ee3ff728",
+   "parent_public_sha256": null,
+   "path_changed": null,
+   "change_type": "new_file",
+   "executed_sha256": "not_applicable",
+   "relation_to_executed": "not part of the reported execution",
+   "evidence_scope": "reader_documentation"
+  },
+  {
+   "path": "docs/PROVENANCE.json",
+   "current_sha256": "a2f146b3c19d9114893cb68f5ae167fd3aad9e07429138614135921d8f78d821",
+   "parent_public_sha256": "baa634faf0b3f176273ad8a5769f2df9449c8b407e90f866baa971fb6954346e",
+   "path_changed": true,
+   "change_type": "public_projection",
+   "executed_sha256": "not_applicable",
+   "relation_to_executed": "not part of the reported execution",
+   "evidence_scope": "run_record",
+   "note": "schema, run identifier, file and folder names in neutral form; current_* fields and a public_projection note added; original hashes unchanged"
+  },
+  {
+   "path": "docs/REPRODUCIBILITY.md",
+   "current_sha256": "ba50edc778182c5f816af9982e63db20f56017b59d62746d80e169aacdd25ac2",
+   "parent_public_sha256": "e6963f7755459ffb59e8e6abde1248abebcdf32075af1a7695b8bd9d457b7595",
+   "path_changed": false,
+   "change_type": "reader_text_edited",
+   "executed_sha256": "not_applicable",
+   "relation_to_executed": "not part of the reported execution",
+   "evidence_scope": "reader_documentation"
+  },
+  {
+   "path": "docs/RIGHTS_AND_DEPENDENCIES.md",
+   "current_sha256": "1500bd00b9b06a66c70a27c2753569337b5471e04c0edb52f1afe6c893b37060",
+   "parent_public_sha256": "bdc4f57c04a95ee6906e87c79277790ecbf24e117874b9e934c3657f7342c38d",
+   "path_changed": false,
+   "change_type": "reader_text_edited",
+   "executed_sha256": "not_applicable",
+   "relation_to_executed": "not part of the reported execution",
+   "evidence_scope": "reader_documentation"
+  },
+  {
+   "path": "docs/VALIDATION_SCOPE.md",
+   "current_sha256": "7074f8a62c08e418d7c1856c15e01ae9ac4ae1d3bc14325160953747c126a0d2",
+   "parent_public_sha256": "389ebdec44aa9904da2e8bce65b9394fb0a7357f9864fba0a91863a6c7b5f032",
+   "path_changed": false,
+   "change_type": "reader_text_edited",
+   "executed_sha256": "not_applicable",
+   "relation_to_executed": "not part of the reported execution",
+   "evidence_scope": "reader_documentation"
+  },
+  {
+   "path": "environment/requirements-core.txt",
+   "current_sha256": "fd1dccf34295b760cbd25c5f425cafbfbd5e11a6dc6f839a40f49c5a10863ce8",
+   "parent_public_sha256": "8c1da74e7594c76bc64ba33e2c5d648bfe31a0ad3f5d39f84712a08381c67511",
+   "path_changed": true,
+   "change_type": "neutral_renames",
+   "executed_sha256": "not_applicable",
+   "relation_to_executed": "not part of the reported execution",
+   "evidence_scope": "environment_record"
+  },
+  {
+   "path": "environment/venv-freeze-2026-10-27.txt",
+   "current_sha256": "ba07485b8e369b738149f0eade32b593be65da9d3c6764087152d899327bb37d",
+   "parent_public_sha256": "a76588ef76babbcae2977fbe2e740165809b2bce1eec0079a7430d527f2d23ad",
+   "path_changed": false,
+   "change_type": "neutral_renames",
+   "executed_sha256": "not_applicable",
+   "relation_to_executed": "not part of the reported execution",
+   "evidence_scope": "environment_record"
+  },
+  {
+   "path": "protocol/README.md",
+   "current_sha256": "55955073a56d237e2e2485244b4f2acc8f80bc19253bfbcfa3621f8ca6fa2396",
+   "parent_public_sha256": "c836bf759d163e4971f9f7d5282d76537088801b9a32118e9f2d0a4790327734",
+   "path_changed": false,
+   "change_type": "reader_text_edited",
+   "executed_sha256": "not_applicable",
+   "relation_to_executed": "not part of the reported execution",
+   "evidence_scope": "reader_documentation"
+  },
+  {
+   "path": "protocol/participant_resamples.npy",
+   "current_sha256": "877f8ecdebb5af1206404f9bea1a7a7281cad335ca113c71fc87edaceebe08b6",
+   "parent_public_sha256": "877f8ecdebb5af1206404f9bea1a7a7281cad335ca113c71fc87edaceebe08b6",
+   "path_changed": false,
+   "change_type": "unchanged",
+   "executed_sha256": "877f8ecdebb5af1206404f9bea1a7a7281cad335ca113c71fc87edaceebe08b6",
+   "relation_to_executed": "byte-identical to the input matrix used by the run (not part of the code identity)",
+   "evidence_scope": "run_input"
+  },
+  {
+   "path": "results/README.md",
+   "current_sha256": "e1348280c41a7faddbf7e51af4d55c0c33d0e0a9a3d46cd68281a5f8927c636e",
+   "parent_public_sha256": "f6cc91b99eeeb98fd2bae22ff36fcc687f3e706f73b739863e9fd6e28a0bbbac",
+   "path_changed": false,
+   "change_type": "reader_text_edited",
+   "executed_sha256": "not_applicable",
+   "relation_to_executed": "not part of the reported execution",
+   "evidence_scope": "reader_documentation"
+  },
+  {
+   "path": "results/decision_criteria.csv",
+   "current_sha256": "c542e1ffa19c4f3cdaf923175c491ce34c5a08c94ae04da76328cb84eae88e28",
+   "parent_public_sha256": "c542e1ffa19c4f3cdaf923175c491ce34c5a08c94ae04da76328cb84eae88e28",
+   "path_changed": false,
+   "change_type": "unchanged",
+   "executed_sha256": "not_applicable",
+   "relation_to_executed": "not part of the reported execution",
+   "evidence_scope": "result_table"
+  },
+  {
+   "path": "results/figures/loss_difference.png",
+   "current_sha256": "4630161b9e5eb0d89d8eed4ec9cce72ec77db28a72bfcbad30a3a5178f5f8019",
+   "parent_public_sha256": "8978afefb78e4530b810bc720d70e2f1a3a50f25cbab49bd77253b417068ca8d",
+   "path_changed": true,
+   "change_type": "figure_redrawn",
+   "executed_sha256": "not_applicable",
+   "relation_to_executed": "not part of the reported execution",
+   "evidence_scope": "figure"
+  },
+  {
+   "path": "results/figures/participant_results.png",
+   "current_sha256": "119266dd2d1f02cf29b0b7608aa5cd3b01859d71fb0c0e55d959a0923158bc96",
+   "parent_public_sha256": "af62c2ddfde84bd099f7e12b0869d893dbc7affdacd6be65af4e06c7e7403a43",
+   "path_changed": true,
+   "change_type": "figure_redrawn",
+   "executed_sha256": "not_applicable",
+   "relation_to_executed": "not part of the reported execution",
+   "evidence_scope": "figure"
+  },
+  {
+   "path": "results/group_estimates.csv",
+   "current_sha256": "f86cb9f57ab85d573184d7d0c817409ed9cd16549b9df017e09b11f55a37f61f",
+   "parent_public_sha256": "f86cb9f57ab85d573184d7d0c817409ed9cd16549b9df017e09b11f55a37f61f",
+   "path_changed": false,
+   "change_type": "unchanged",
+   "executed_sha256": "not_applicable",
+   "relation_to_executed": "not part of the reported execution",
+   "evidence_scope": "result_table"
+  },
+  {
+   "path": "results/participant_results.csv",
+   "current_sha256": "537c7c0807632eff28c8c2200337b622cae1711b111b4ab709c393c7856342d0",
+   "parent_public_sha256": "537c7c0807632eff28c8c2200337b622cae1711b111b4ab709c393c7856342d0",
+   "path_changed": false,
+   "change_type": "unchanged",
+   "executed_sha256": "not_applicable",
+   "relation_to_executed": "not part of the reported execution",
+   "evidence_scope": "result_table"
+  },
+  {
+   "path": "results/primary_results.json",
+   "current_sha256": "3f8f341d4fb638a994e8a9a33af9767934fdc48a01e24a8bdd3020036d259184",
+   "parent_public_sha256": "55fdcec96d44fd73411f7c23b183cad7799a5fb5bbbd125cce8dc7224dde3152",
+   "path_changed": false,
+   "change_type": "public_projection",
+   "executed_sha256": "55fdcec96d44fd73411f7c23b183cad7799a5fb5bbbd125cce8dc7224dde3152",
+   "relation_to_executed": "public projection of the saved scoring output (run identifier replaced by a public alias; projection note added; every other field identical)",
+   "evidence_scope": "saved_result",
+   "note": "only /run_id differs from the saved output; /public_projection added"
+  },
+  {
+   "path": "scripts/LICENSE",
+   "current_sha256": "dda6c1138e19e0b0c6ff5598b25b954225dae4e172c183b61591298aff5b3ca3",
+   "parent_public_sha256": "dda6c1138e19e0b0c6ff5598b25b954225dae4e172c183b61591298aff5b3ca3",
+   "path_changed": false,
+   "change_type": "unchanged",
+   "executed_sha256": "not_applicable",
+   "relation_to_executed": "not part of the reported execution",
+   "evidence_scope": "licence_text"
+  },
+  {
+   "path": "scripts/make_result_tables.py",
+   "current_sha256": "f7fcb9485dd17559505ff1d3157e944dbf387f0c1faa2e9527a6c411bbc34bc8",
+   "parent_public_sha256": "ebbe7bb27a22a3800211133824f55ebd33e30fbd0a6d19be018322b30929ecd5",
+   "path_changed": false,
+   "change_type": "display_script_edited",
+   "executed_sha256": "not_applicable",
+   "relation_to_executed": "not part of the reported execution",
+   "evidence_scope": "display_script",
+   "note": "docstring wording, the run identifier constant (public alias), the pinned SHA-256 of the projected results file, one path and one error message changed; projection and check logic unchanged"
+  },
+  {
+   "path": "scripts/plot_participant_results.py",
+   "current_sha256": "b07cede3b006d8caeaa9c33131d8bd6982c125f8e690af2692e1a0c872f5a67d",
+   "parent_public_sha256": "a0f9f5842734e408592fd4a3cb9c4c78154a23e1b8594f85fbf730e55c71a9f6",
+   "path_changed": false,
+   "change_type": "display_script_edited",
+   "executed_sha256": "not_applicable",
+   "relation_to_executed": "not part of the reported execution",
+   "evidence_scope": "display_script",
+   "note": "four title and note strings changed on 2026-10-31; in this release copy the docstring, the output file names, the pinned SHA-256 values of the projected results and derived configuration, one path and one error message changed; drawing logic unchanged"
+  },
+  {
+   "path": "tools/code_identity.py",
+   "current_sha256": "b9a915d73fd7865bb0df10331cf339382b2db644545b64b65a937f992abb7b49",
+   "parent_public_sha256": null,
+   "path_changed": null,
+   "change_type": "new_file",
+   "executed_sha256": "not_applicable",
+   "relation_to_executed": "not part of the reported execution",
+   "evidence_scope": "release_tooling"
+  },
+  {
+   "path": "tools/tests/test_code_identity.py",
+   "current_sha256": "4dfabaf1ced32ddd9da6b3bcd68c7053b1ec6780c5450ed56767bf44ab5ae525",
+   "parent_public_sha256": null,
+   "path_changed": null,
+   "change_type": "new_file",
+   "executed_sha256": "not_applicable",
+   "relation_to_executed": "not part of the reported execution",
+   "evidence_scope": "release_tooling"
+  }
+ ],
+ "removed_since_parent": [
+  {
+   "path": "docs/HISTORY.md",
+   "parent_public_sha256": "2636828cb5f12b75b9d5b0294efadfd652d1ec1be9c1ea263362d7c74c975b71",
+   "reason": "development history of earlier snapshots, not included in this release copy; its still-applicable limits (data analysed before, not a fresh blind test, earlier broader analysis not re-certified, coinciding values not independent confirmation) are stated in docs/METHODS_AND_LIMITATIONS.md section 10"
+  }
+ ]
+}

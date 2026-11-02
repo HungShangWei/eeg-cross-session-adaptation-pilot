@@ -1,0 +1,11 @@
+# Core packages of the pilot run environment (DREC01_CORE_VALIDATION_PUBLIC_ALIAS_PILOT, executed 2026-10-27).
+# These five versions are recorded in code/pilot/candidate/config/ENVIRONMENT_METADATA_v1.json and were
+# checked by the launcher's environment_check() at run time (exact version equality).
+# Interpreter: CPython 3.14.7 on macOS (Apple Silicon, arm64), CPU only, one thread.
+# These pins document the original environment. Installing them was not tested for this showcase,
+# and other platforms or Python versions may not provide these exact builds.
+numpy==2.5.3
+scipy==1.18.1
+torch==2.14.1
+pyriemann==0.12
+scikit-learn==1.9.1

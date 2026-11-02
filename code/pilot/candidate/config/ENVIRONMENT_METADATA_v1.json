@@ -1,0 +1,31 @@
+{
+  "executable": "<PROJECT_ROOT>/.venv_mi_ops_e1_v1_1/bin/python",
+  "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+  "prefix": "<PROJECT_ROOT>/.venv_mi_ops_e1_v1_1",
+  "packages": {
+    "numpy": {
+      "version": "2.5.3",
+      "metadata_path": "<PROJECT_ROOT>/.venv_mi_ops_e1_v1_1/lib/python3.14/site-packages/numpy-2.5.3.dist-info"
+    },
+    "scipy": {
+      "version": "1.18.1",
+      "metadata_path": "<PROJECT_ROOT>/.venv_mi_ops_e1_v1_1/lib/python3.14/site-packages/scipy-1.18.1.dist-info"
+    },
+    "torch": {
+      "version": "2.14.1",
+      "metadata_path": "<PROJECT_ROOT>/.venv_mi_ops_e1_v1_1/lib/python3.14/site-packages/torch-2.14.1.dist-info"
+    },
+    "pyriemann": {
+      "version": "0.12",
+      "metadata_path": "<PROJECT_ROOT>/.venv_mi_ops_e1_v1_1/lib/python3.14/site-packages/pyriemann-0.12.dist-info"
+    },
+    "scikit-learn": {
+      "version": "1.9.1",
+      "metadata_path": "<PROJECT_ROOT>/.venv_mi_ops_e1_v1_1/lib/python3.14/site-packages/scikit_learn-1.9.1.dist-info"
+    },
+    "psutil": {
+      "status": "MISSING"
+    }
+  },
+  "scientific_imports_performed": false
+}
